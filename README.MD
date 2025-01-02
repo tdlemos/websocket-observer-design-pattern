@@ -4,14 +4,13 @@ In this solution, I'm going to create a real-time notification using Websocket a
 
 The objective of this solution is to notify all clients connect via WebSocket with the current date and time.
 
-## Observer - Design Pattern
-
-Observer is a behavioral deisgn pattern that let you define a subscription mechanism to notify multiple objects about events that happen to the object they're observering.
-
 In this example, I'm creating a Websocket server that will be used to accept client connection and subscribe every client to the observer class. 
 
 To achieve the goal I created one project **Observer.Lib** containing Observer Design Pattern necessary files, one **WebApi& project to accept clients and one background service to notify all clients.
 
+## Observer - Design Pattern
+
+Observer is a behavioral deisgn pattern that let you define a subscription mechanism to notify multiple objects about events that happen to the object they're observering.
 
 ## Observer classes
 
