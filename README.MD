@@ -1,18 +1,19 @@
-# Observer Design Pattern and WebSocket
+# .NET 8 Observer Design Pattern and WebSocket
 
-In this solution, I'm going to create a real-time notification using websocket and Observer design pattern
+In this solution, I'm going to create a real-time notification using Websocket and Observer design pattern.
 
-# Observer - Design Pattern
+The objective of this solution is to notify all clients connect via WebSocket with the current date and time.
 
-Observer is a behavioral deisgn pattern that lets you define a subscription mechanism to notify multiple objects about events that happen to the object they're observering.
+## Observer - Design Pattern
 
-In this example, I'm creating a Websocket server that will subscribe every connection. The objective of this solution is that all clients connected through Websocket receives notification from the server.
+Observer is a behavioral deisgn pattern that let you define a subscription mechanism to notify multiple objects about events that happen to the object they're observering.
 
-To achieve the goal I created one project Observer.Lib that contains only the Observer design pattern necessary files, on Web Api project and one background service.
+In this example, I'm creating a Websocket server that will be used to accept client connection and subscribe every client to the observer class. 
 
-The ideia behinde it is to use the background service to timely notifify all clients.
+To achieve the goal I created one project **Observer.Lib** containing Observer Design Pattern necessary files, one **WebApi& project to accept clients and one background service to notify all clients.
 
-# Observer classes
+
+## Observer classes
 
 **__Observer.Lib/ISubject.cs__** - ISubject Interface
 
