@@ -6,7 +6,7 @@ The objective of this solution is to notify all clients connect via WebSocket wi
 
 In this example, I'm creating a Websocket server that will be used to accept client connection and subscribe every client to the observer class. 
 
-To achieve the goal I created one project **Observer.Lib** containing Observer Design Pattern necessary files, one **WebApi& project to accept clients and one background service to notify all clients.
+To achieve the goal I created one project **Observer.Lib** containing Observer Design Pattern necessary files, one **WebApi** project to accept clients and one **Background service** to notify all clients.
 
 ## Observer - Design Pattern
 
